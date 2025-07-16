@@ -1,4 +1,57 @@
-## **Results and Visualization**
+# 🧬 Warfarin Dose Prediction Based on Genetic Risk Score
+
+This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1** on warfarin dosing by converting genotype data into a quantitative **genetic risk score**. The analysis is based on real-world genotype-dosage data from the PharmGKB database.
+
+---
+
+## 📌 Backgrounds
+
+## 📌 Objectives
+
+- Assess the relationship between **CYP2C9** and **VKORC1** genotypes with therapeutic warfarin dose.
+- Translate genotypes into **Genetic Risk Scores (GRS)** for simplified stratification.
+- Visualize dose variation across different risk groups.
+
+---
+
+## 📌 Methodology
+
+### 📦 Dataset
+
+- **Source**: [PharmGKB Warfarin Dosing Dataset](https://www.pharmgkb.org/)
+- **Key Columns**:
+  - `Subject ID`
+  - `CYP2C9 Genotype`
+  - `VKORC1 Genotype`
+  - `Therapeutic Dose of Warfarin (mg/day)`
+
+### 🧼 Data Preprocessing
+
+- Selected only important columns for analysis:
+  - `"Subject ID"`, `"CYP2C9 Genotype"`, `"VKORC1 Genotype"`, and `"Dose"`.
+- Renamed columns to simpler and readable names:
+  - `"Therapeutic Dose of Warfarin"` → `"Dose"`
+  - `"CYP2C9*Genotype"` → `"CYP2C9"`
+- Removed rows with missing values in `CYP2C9`, `VKORC1`, or `Dose`
+- Standardized genotype formatting:
+  - `"A/G"` → `"AG"`
+  - `"*1 / *3"` → `"*1/*3"` (no spaces)
+- Created a new column: `Risk_Score` based on predefined genotype scoring
+
+### 🧮 Genetic Risk Score System
+
+| Gene     | Genotype(s)              | Score |
+|----------|--------------------------|-------|
+| CYP2C9   | *1/*1                    | 0     |
+|          | *1/*2, *1/*3             | 1     |
+|          | *2/*3, *3/*3             | 2     |
+| VKORC1   | GG                       | 0     |
+|          | AG                       | 1     |
+|          | AA                       | 2     |
+
+**Total Risk Score = CYP2C9 Score + VKORC1 Score** (Range: 0–4)
+  
+## 📌**Results and Visualization**
 
 ### Number of Patients per Risk Score
 
@@ -53,7 +106,6 @@ While outliers are valid and expected in real-world data, a filtered version of 
 
 ### What does the Error Bar mean?
 
-
 The vertical lines (error bars) represent the **standard deviation**, which tells us how much variation exists within each group.
 
 - **Short error bar** = consistent dose in that group
@@ -61,10 +113,18 @@ The vertical lines (error bars) represent the **standard deviation**, which tell
 
 When error bars between different scores **don’t overlap**, it suggests a real difference in average dose.
 
-## **Conclusion**
+---
+
+## 📌**Conclusion**
 
 This analysis confirms that increasing genetic risk scores (based on **CYP2C9** and **VKORC1**) are generally associated with lower warfarin doses.
 
 This suggests that pre-treatment genetic testing could support safer and more effective warfarin dosing.
 
 > ⚠️ Note: This is a simulation based on rule-based scoring and retrospective data. Clinical application requires validation and population-specific adjustments.
+
+## 👩‍🔬 Author
+
+**Farah Yusri**  
+Biomedical & Pharmacogenomics Enthusiast  
+[LinkedIn](#) | [GitHub](#) | [Email](farahyusri12@gmail.com)
