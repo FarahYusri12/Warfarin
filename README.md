@@ -22,7 +22,7 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
 - **Key Columns**:
   - `PharmGKB Subject ID`
   - `CYP2C9 Genotype`
-  - `VKORC1 Genotype`
+  - `VKORC1 genotype: -1639 G>A (3673); chr16:31015190; rs9923231; C/T`
   - `Therapeutic Dose of Warfarin (mg/day)`
 
 ### 🧼 Data Preprocessing
@@ -36,7 +36,6 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
   - `"Therapeutic Dose of Warfarin"` → `"Dose"`
 - Removed rows with missing values in `CYP2C9`, `VKORC1 (rs9923231; C/T)`, or `Dose`
 - Standardized genotype formatting:
-  - `"A/G"` → `"AG"`
   - `"*1 / *3"` → `"*1/*3"` (no spaces)
 - Created a new column: `Risk_Score` based on predefined genotype scoring
 
@@ -47,9 +46,9 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
 | CYP2C9   | *1/*1                    | 0     |
 |          | *1/*2, *1/*3             | 1     |
 |          | *2/*3, *3/*3             | 2     |
-| VKORC1   | GG                       | 0     |
-|          | AG                       | 1     |
-|          | AA                       | 2     |
+| VKORC1   | G/G                       | 0     |
+|          | A/G                       | 1     |
+|          | A/A                       | 2     |
 
 **Total Risk Score = CYP2C9 Score + VKORC1 Score** (Range: 0–4)
   
