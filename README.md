@@ -20,7 +20,7 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
 
 - **Source**: [PharmGKB Warfarin Dosing Dataset](https://www.pharmgkb.org/)
 - **Key Columns**:
-  - `Subject ID`
+  - `PharmGKB Subject ID`
   - `CYP2C9 Genotype`
   - `VKORC1 Genotype`
   - `Therapeutic Dose of Warfarin (mg/day)`
@@ -28,10 +28,12 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
 ### 🧼 Data Preprocessing
 
 - Selected only important columns for analysis:
-  - `"Subject ID"`, `"CYP2C9 Genotype"`, `"VKORC1 Genotype"`, and `"Dose"`.
+  - `"PharmGKB Subject ID"`, `"CYP2C9 Genotype"`, `"VKORC1 genotype: -1639 G>A (3673); chr16:31015190; rs9923231; C/T"`, and `"Therapeutic Dose of Warfarin"`.
 - Renamed columns to simpler and readable names:
-  - `"Therapeutic Dose of Warfarin"` → `"Dose"`
+  - `"PharmGKB Subject ID"` → `"ID"`
   - `"CYP2C9*Genotype"` → `"CYP2C9"`
+  - `"VKORC1 genotype: -1639 G>A (3673); chr16:31015190; rs9923231; C/T"` → `"VKORC1 (rs9923231; C/T)"`
+  - `"Therapeutic Dose of Warfarin"` → `"Dose"`
 - Removed rows with missing values in `CYP2C9`, `VKORC1`, or `Dose`
 - Standardized genotype formatting:
   - `"A/G"` → `"AG"`
