@@ -34,7 +34,7 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
   - `"CYP2C9*Genotype"` → `"CYP2C9"`
   - `"VKORC1 genotype: -1639 G>A (3673); chr16:31015190; rs9923231; C/T"` → `"VKORC1 (rs9923231; C/T)"`
   - `"Therapeutic Dose of Warfarin"` → `"Dose"`
-- Removed rows with missing values in `CYP2C9`, `VKORC1`, or `Dose`
+- Removed rows with missing values in `CYP2C9`, `VKORC1 (rs9923231; C/T)`, or `Dose`
 - Standardized genotype formatting:
   - `"A/G"` → `"AG"`
   - `"*1 / *3"` → `"*1/*3"` (no spaces)
