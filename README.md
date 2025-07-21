@@ -6,11 +6,11 @@ This project analyzes the influence of genetic variants **CYP2C9** and **VKORC1*
 
 ## 📌 Backgrounds
 
-Warfarin is a widely used anticoagulant in clinical practice (Xue *et al.*, 2024), primarily for the prevention of clot-related complications such as stroke and venous thromboembolism (VTE) (Wang *et al.*, 2021). It functions by inhibiting the vitamin K epoxide reductase (VKOR) enzyme, which prevents the recycling of vitamin K to its active form. This inhibition consequently reduces the production of functional vitamin K–dependent clotting factors (Jokhab *et al.*, 2025).
+Warfarin is a widely used anticoagulant in clinical practice (Xue *et al.*, 2024), primarily for the prevention of clot-related complications such as stroke and venous thromboembolism (VTE) (Wang *et al.*, 2021). It works by inhibiting the vitamin K epoxide reductase (VKOR) enzyme, which prevents the recycling of vitamin K to its active form. This inhibition consequently reduces the production of functional vitamin K–dependent clotting factors (Jokhab *et al.*, 2025).
 
-According to Jokhab *et al*. (2025), single-nucleotide polymorphisms in the VKORC1 gene (rs9923231) contribute to lower dose requirements for warfarin and increase the risk of excessive anticoagulation. VKORC1 involved in the reduction of vitamin K, that are essential in blood clotting (Rodríguez-Fernández *et al.*, 2024). CYP2C9 is the primary enzyme responsible for metabolizing warfarin in the liver (Xue et al., 2024). According to Zhao et al. (2023), specific single-nucleotide polymorphisms in CYP2C9, namely (rs1799853) and (rs1057910), can result in decreased warfarin metabolism and an increased risk of bleeding complications. To mitigate this risk, individuals carrying the CYP2C9 (rs1799853) and (rs1057910) variants may require a lower dosage of warfarin (Zhao et al., 2023).
+As reported by Jokhab *et al*. (2025), single-nucleotide polymorphisms in the VKORC1 gene (rs9923231) contribute to lower dose requirements for warfarin and increase the risk of excessive anticoagulation. VKORC1 plays a crucial role in the reduction of vitamin K, that are essential in blood clotting (Rodríguez-Fernández *et al.*, 2024). CYP2C9 is the primary enzyme responsible for metabolizing warfarin in the liver (Xue et al., 2024). According to Zhao et al. (2023), specific single-nucleotide polymorphisms in CYP2C9, namely (rs1799853) and (rs1057910), can reduced enzymatic activity and increased risk of bleeding complications. To mitigate this risk, individuals carrying the CYP2C9 (rs1799853) and (rs1057910) variants may require a lower dosage of warfarin (Zhao et al., 2023).
 
-VKORC1 involved in the reduction of vitamin K, that are essential in blood clotting (Rodríguez-Fernández *et al.*, 2024).
+
 
 ---
 
@@ -59,7 +59,9 @@ VKORC1 involved in the reduction of vitamin K, that are essential in blood clott
 |          | AA                       | 2     |
 
 **Total Risk Score = CYP2C9 Score + VKORC1 Score** (Range: 0–4)
-  
+
+---
+
 ## 📌**Results and Visualization**
 
 ### Number of Patients per Risk Score
@@ -132,6 +134,8 @@ This suggests that pre-treatment genetic testing could support safer and more ef
 
 > ⚠️ Note: This is a simulation based on rule-based scoring and retrospective data. Clinical application requires validation and population-specific adjustments.
 
+---
+
 ## 📌**References**
 
 Jokhab, S., AlRasheed, M. M., Bakheet, D., AlMomen, A., AlAboud, N., & Kamali, F. (2025). The impact of CYP2C9, VKORC1, and CYP4F2 polymorphisms on warfarin dose requirement in Saudi patients. Frontiers in Pharmacology, 16, 1547142.
@@ -145,6 +149,8 @@ Wang, M., Zeraatkar, D., Obeda, M., Lee, M., Garcia, C., Nguyen, L., Agarwal, A.
 Xue, L., Singla, R. K., He, S., Arrasate, S., González-Díaz, H., Miao, L., & Shen, B. (2024). Warfarin–A natural anticoagulant: A review of research trends for precision medication. Phytomedicine, 128, 155479.
 
 Zhao, L., Zhai, Z., & Li, P. (2023). One rare warfarin resistance case and possible mechanism exploration. Pharmacogenomics and Personalized Medicine, 609-615.
+
+---
 
 ## 👩‍🔬 Author
 
