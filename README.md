@@ -128,6 +128,23 @@ When error bars between different scores **don’t overlap**, it suggests a real
 
 ## 📌**Project structure**
 
+```
+warfarin-genetic-only/
+│
+├── data/                        # dataset (simulated for demo)
+│   └── Warfarin_Data.csv        # dataset for genetic-only model
+│   └── df_gen.csv               # dataset for genetic-only model
+│
+├── scripts/                    # analysis scripts
+│   ├── preprocess.py            # data cleaning & preprocessing
+│   └── genetic_model.py         # analysis using CYP2C9 and VKORC1 genotypes
+│
+├── figures/                    # generated plots and visualizations
+│   └── genetic_dose_plot.png
+│
+│
+└── README.md                   # project documentation
+```
 
 ## 📌**Conclusion**
 
