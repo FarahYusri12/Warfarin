@@ -126,13 +126,16 @@ When error bars between different scores **don’t overlap**, it suggests a real
 
 ---
 
+## 📌**Project structure**
+
+
 ## 📌**Conclusion**
 
 This analysis confirms that increasing genetic risk scores (based on **CYP2C9** and **VKORC1**) are generally associated with lower warfarin doses.
 
 This suggests that pre-treatment genetic testing could support safer and more effective warfarin dosing.
 
-> ⚠️ Note: This is a simulation based on rule-based scoring and retrospective data. Clinical application requires validation and population-specific adjustments.
+> ⚠️ Disclaimer: This project is for educational purposes only. Not intended for clinical decision-making
 
 ---
 
