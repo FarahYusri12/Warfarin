@@ -68,7 +68,7 @@ As reported by Jokhab *et al*. (2025), single-nucleotide polymorphisms in the VK
 
 <img width="580" height="455" alt="Number of patients by genetic risk score1" src="https://github.com/user-attachments/assets/e6fe62e3-5e32-46f8-ac80-fcd1ef14c245" />
 
-**Figure 1**: Number of patients by genetic risk score
+**Graph 1**: Number of patients by genetic risk score
 
 > Most patients fall within Risk Score 0 to 2. Very few samples exist for scores 3 and 4, indicating data imbalance.
 > The dataset shows a clear imbalance in the number of patients across genetic risk scores.
@@ -81,7 +81,7 @@ To improve clarity, the countplot is annotated with the exact count values above
 
 <img width="989" height="590" alt="Distribution of warfarin dose by genetic risk score" src="https://github.com/user-attachments/assets/136f9baf-5a22-405a-bf21-73b8c55a144c" />
 
-**Figure 2**: Distribution of warfarin dose by genetic score
+**Graph 2**: Distribution of warfarin dose by genetic score
 
 > A clear downward trend is observed in median dose from score 0 to 4. The dots represent outliers — patients whose dose needs differ significantly from the rest of the group.
 
@@ -98,7 +98,7 @@ While outliers are valid and expected in real-world data, a filtered version of 
 
 <img width="841" height="547" alt="Average warfarin dose by genetic risk score" src="https://github.com/user-attachments/assets/9782051a-5ad8-486c-9640-179a318e2de5" />
 
-**Figure 3**: Average warfarin dose by genetic risk score
+**Graph 3**: Average warfarin dose by genetic risk score
 
 
 > Based on the genetic risk score (0–4), we analyzed how warfarin dose varies across different levels of genetic sensitivity.
