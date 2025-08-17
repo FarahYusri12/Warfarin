@@ -49,14 +49,14 @@ As reported by Jokhab *et al*. (2025), single-nucleotide polymorphisms in the VK
 
 ### 🧮 Genetic Risk Score System
 
-| Gene     | Genotype(s)              | Score |
-|----------|--------------------------|-------|
-| CYP2C9   | *1/*1                    | 0     |
-|          | *1/*2, *1/*3             | 1     |
-|          | *2/*3, *3/*3             | 2     |
-| VKORC1   | GG                       | 0     |
-|          | AG                       | 1     |
-|          | AA                       | 2     |
+| Gene     | Genotype(s)               | Score |
+|----------|---------------------------|-------|
+| CYP2C9   | *1/*1                     | 0     |
+|          | *1/*2, *1/*3              | 1     |
+|          | *2/*3, *3/*3              | 2     |
+| VKORC1   | G/G                       | 0     |
+|          | A/G                       | 1     |
+|          | A/A                       | 2     |
 
 **Total Risk Score = CYP2C9 Score + VKORC1 Score** (Range: 0–4)
 
@@ -136,11 +136,10 @@ warfarin-genetic-only/
 │   └── df_gen.csv               # dataset for genetic-only model
 │
 ├── scripts/                    # analysis scripts
-│   ├── preprocess.py            # data cleaning & preprocessing
-│   └── genetic_model.py         # analysis using CYP2C9 and VKORC1 genotypes
+│   ├── Warfarin_Data.ipynb            # data cleaning & preprocessing
+│   ├── Warfarin_Data2.ipynb            # data cleaning & preprocessing
+│   └── Warfarin_Dose_by_Genetic_risk_score.ipynb         # analysis using CYP2C9 and VKORC1 genotypes
 │
-├── figures/                    # generated plots and visualizations
-│   └── genetic_dose_plot.png
 │
 │
 └── README.md                   # project documentation
