@@ -132,13 +132,13 @@ When error bars between different scores **don’t overlap**, it suggests a real
 warfarin-genetic-only/
 │
 ├── data/                        # dataset (simulated for demo)
-│   └── Warfarin_Data.csv        # dataset for genetic-only model
+│   └── Warfarin_Data.csv        # raw dataset 
 │   └── df_gen.csv               # dataset for genetic-only model
 │
 ├── scripts/                    # analysis scripts
 │   ├── Warfarin_Data.ipynb            # data cleaning & preprocessing
 │   ├── Warfarin_Data2.ipynb            # data cleaning & preprocessing
-│   └── Warfarin_Dose_by_Genetic_risk_score.ipynb         # analysis using CYP2C9 and VKORC1 genotypes
+│   └── Warfarin_Dose_by_Genetic_risk_score.ipynb         # analysis using CYP2C9 and VKORC1 genotypes 
 │
 │
 │
